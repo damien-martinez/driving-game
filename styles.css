@@ -4,6 +4,8 @@ body {
 
 img {
   width: 10rem;
+  position: absolute;
+  left: 5px;
 }
 
 .car-left {
