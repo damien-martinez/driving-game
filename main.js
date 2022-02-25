@@ -17,7 +17,6 @@ function moveDirection(event) {
     $image.setAttribute('class', 'car-right');
 
   }
-  // console.log($image);
 
 }
 
@@ -41,8 +40,16 @@ function moveCar(event) {
   if ($image.getAttribute('class') === 'car-right') {
     leftCount += 5;
     $image.setAttribute('style', 'top:' + topCount.toString() + 'px; ' + 'left:' + leftCount.toString() + 'px');
+  } else if ($image.getAttribute('class') === 'car-left') {
+    leftCount -= 5;
+    $image.setAttribute('style', 'top:' + topCount.toString() + 'px; ' + 'left:' + leftCount.toString() + 'px');
+  } else if ($image.getAttribute('class') === 'car-up') {
+    topCount -= 5;
+    $image.setAttribute('style', 'top:' + topCount.toString() + 'px; ' + 'left:' + leftCount.toString() + 'px');
+  } else if ($image.getAttribute('class') === 'car-down') {
+    topCount += 5;
+    $image.setAttribute('style', 'top:' + topCount.toString() + 'px; ' + 'left:' + leftCount.toString() + 'px');
+
   }
 
 }
-
-/* <img style="top:0px; left:0px" class="car" src="images/f1.svg" alt=""></img> */
