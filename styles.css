@@ -4,4 +4,22 @@ body {
 
 img {
   width: 10rem;
+  position: absolute;
+  left: 5px;
+}
+
+.car-left {
+  transform: rotate(180deg);
+}
+
+.car-right {
+  transform: rotate(0deg);
+}
+
+.car-up {
+  transform: rotate(-90deg);
+}
+
+.car-down {
+  transform: rotate(90deg);
 }
